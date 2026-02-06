@@ -1,4 +1,4 @@
-# 1. HACK PARA SQLITE (DEBE SER LA LÍNEA 1)
+# 1. PARCHE CRÍTICO PARA SQLITE EN LINUX (DEBE SER LA LÍNEA 1)
 try:
     __import__('pysqlite3')
     import sys
@@ -10,15 +10,13 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-# 2. IMPORTACIONES DE LANGCHAIN CORREGIDAS
+# 2. IMPORTACIONES DE INTELIGENCIA ARTIFICIAL
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_huggingface import HuggingFaceEmbeddings 
 from langchain_chroma import Chroma
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
-
-# ... el resto de tu código igual que antes
 
 # Cargar variables (.env en local o Secrets en Streamlit Cloud)
 load_dotenv()
@@ -48,9 +46,8 @@ with st.sidebar:
     st.title("SOP Guardian 🛡️")
     st.markdown("---")
     st.markdown("### 📚 Manuales Activos")
-    st.success("✅ Estación de Frituras")
-    st.success("✅ Estación de Plancha") 
-    st.success("✅ Protocolos de Gerencia")
+    st.success("✅ Operaciones Completas")
+    st.success("✅ Protocolos Gerenciales")
 
 # --- LÓGICA RAG ---
 DB_PATH = "./vectorstore"
@@ -64,41 +61,35 @@ def get_vectorstore():
     return Chroma(persist_directory=DB_PATH, embedding_function=embedding_model)
 
 def get_rag_chain(vector_db):
-    # Usamos el modelo que ya sabemos que te funciona
     llm = ChatGoogleGenerativeAI(
-        model="gemini-flash-latest", 
+        model="gemini-1.5-flash", 
         temperature=0, 
         google_api_key=secure_key
     )
     
-    # IMPORTANTE: El prompt DEBE contener la variable {context} 
-    # para que la cadena sepa dónde inyectar los fragmentos del manual.
-    system_prompt = (
-        "Actúa como un Gerente de Entrenadores de McDonald's experto. "
-        "Responde basándote ÚNICAMENTE en el siguiente contexto extraído de los manuales: "
-        "\n\n"
-        "{context}"
-        "\n\n"
-        "Si la información no está en el contexto, di que no se encuentra en los manuales oficiales. "
-        "Sé breve y directo."
+    # Usamos from_template para asegurar la compatibilidad de variables con Pydantic
+    prompt = ChatPromptTemplate.from_template(
+        """Eres un Gerente de Entrenadores de McDonald's experto. 
+        Responde basándote ÚNICAMENTE en el siguiente contexto extraído de los manuales oficiales:
+        
+        {context}
+        
+        Pregunta del empleado: {input}
+        
+        Si la información no está en el contexto, di que no se encuentra en los manuales. 
+        Sé profesional, breve y directo."""
     )
     
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", system_prompt),
-        ("human", "{input}"),
-    ])
-    
-    # 1. Creamos la cadena que combina los documentos (el "Stuff" chain)
+    # Cadena para combinar documentos
     question_answer_chain = create_stuff_documents_chain(llm, prompt)
     
-    # 2. La unimos con el recuperador (retriever)
-    # Esto crea el flujo completo: Pregunta -> Búsqueda -> Respuesta
+    # Cadena de recuperación completa
     return create_retrieval_chain(
         vector_db.as_retriever(search_kwargs={"k": 3}), 
         question_answer_chain
     )
 
-# --- INTERFAZ ---
+# --- INTERFAZ DE USUARIO ---
 st.title("🍔 Asistente de Operaciones")
 
 vector_db = get_vectorstore()
@@ -111,13 +102,17 @@ if vector_db:
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
 
-    if prompt := st.chat_input("Ej: ¿Temperatura del aceite?"):
+    if prompt := st.chat_input("Ej: ¿Cómo es el protocolo BLAST?"):
         st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"): st.markdown(prompt)
+        with st.chat_message("user"): 
+            st.markdown(prompt)
 
         with st.chat_message("assistant"):
-            with st.spinner("Consultando..."):
-                chain = get_rag_chain(vector_db)
-                response = chain.invoke({"input": prompt})
-                st.markdown(response["answer"])
-                st.session_state.messages.append({"role": "assistant", "content": response["answer"]})
+            with st.spinner("Consultando manuales..."):
+                try:
+                    chain = get_rag_chain(vector_db)
+                    response = chain.invoke({"input": prompt})
+                    st.markdown(response["answer"])
+                    st.session_state.messages.append({"role": "assistant", "content": response["answer"]})
+                except Exception as e:
+                    st.error(f"Hubo un error al procesar la respuesta: {str(e)}")
