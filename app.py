@@ -2,6 +2,10 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # Cargar variables
 load_dotenv()
 secure_key = os.getenv("GOOGLE_API_KEY")
