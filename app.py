@@ -2,7 +2,7 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-# 1. PARCHE DE COMPATIBILIDAD (Importante para Streamlit Cloud)
+# 1. PARCHE DE COMPATIBILIDAD 
 try:
     __import__('pysqlite3')
     import sys
@@ -57,7 +57,7 @@ def load_system():
     
     # Configurar IA
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash", # <--- USA ESTE NOMBRE EXACTO (Sin -latest)
+        model="gemini-2.5-flash", 
         temperature=0, 
         google_api_key=secure_key)
     
@@ -92,7 +92,7 @@ if rag_system:
         with st.chat_message("assistant"):
             with st.spinner("Consultando manual..."):
                 try:
-                    # Usamos el sistema cargado
+                    # Invocar el sistema RAG    
                     response = rag_system.invoke({"input": user_input})
                     answer = response["answer"]
                     st.markdown(answer)
