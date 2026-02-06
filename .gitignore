@@ -1,0 +1,13 @@
+# Archivos de seguridad (NUNCA SUBIR)
+.env
+
+# Archivos basura de Python
+__pycache__/
+*.pyc
+
+# Carpetas pesadas (se reinstalan, no se suben)
+env39/
+vectorstore/
+
+# Archivos del sistema
+.DS_Store

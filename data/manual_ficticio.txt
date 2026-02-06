@@ -1,0 +1,194 @@
+MANUAL DE OPERACIONES Y ENTRENAMIENTO (O&T) - EDICIÓN MAESTRA 2024
+PROPIEDAD DE: RESTAURANTE MODELO (USO EXCLUSIVO DE ENTRENAMIENTO)
+NIVEL DE SEGURIDAD: CONFIDENCIAL
+
+-------------------------------------------------------------------------
+SECCIÓN 1: SEGURIDAD ALIMENTARIA Y PROCEDIMIENTOS DE HIGIENE
+-------------------------------------------------------------------------
+
+1.1 LAVADO DE MANOS (PROCEDIMIENTO DE 20 SEGUNDOS)
+El lavado de manos es obligatorio: Al entrar a la cocina, cada hora en punto, tras tocar basura, tras ir al baño y tras manejar carne cruda.
+PASOS:
+1. Mojar las manos con agua caliente (mínimo 38°C).
+2. Aplicar jabón bactericida.
+3. Frotar vigorosamente manos y antebrazos durante 20 segundos.
+4. Enjuagar y secar con toalla de papel desechable.
+5. Cerrar el grifo usando la toalla de papel (sin tocarlo con la mano limpia).
+6. Aplicar gel sanitizante (Hand Sanitizer) y dejar secar al aire.
+
+1.2 TEMPERATURAS MÍNIMAS DE SEGURIDAD INTERNA (CARNE COCIDA)
+Todos los productos deben verificarse con pirómetro digital diariamente.
+- Carne de Res (10:1 y 4:1): Mínimo 69°C (155°F).
+- Pollo (McChicken, Nuggets): Mínimo 74°C (165°F).
+- Pescado (Filet-O-Fish): Mínimo 69°C (155°F).
+- Salchicha (Desayuno): Mínimo 69°C (155°F).
+
+-------------------------------------------------------------------------
+SECCIÓN 2: ESTACIÓN DE FRITURAS (FRIES & FRIED PRODUCTS)
+-------------------------------------------------------------------------
+
+2.1 PATATAS FRITAS (FRENCH FRIES)
+- Temperatura del Aceite: 168°C (335°F).
+- Tiempo de Cocción: 3 minutos y 00 segundos (180 seg).
+- Tiempo de Escurrido: 5 a 10 segundos antes de vaciar.
+- Procedimiento de Salado: Usar dispensador "Accu-Salt". Aplicar en un solo movimiento de arco de atrás hacia adelante.
+- Vida Útil (Holding Time): 7 minutos en la estación de calor.
+- Alarma de "Duty" (Sacudida): Suena a los 30 segundos. Es obligatorio sacudir la cesta para evitar que se peguen.
+
+2.2 PRODUCTOS DE POLLO Y PESCADO (VATS SEPARADOS)
+- Temperatura del Aceite: 182°C (360°F).
+- McNuggets: 3 minutos 30 segundos. (Vida útil: 20 minutos en UHC).
+- McChicken: 3 minutos 30 segundos. (Vida útil: 30 minutos en UHC).
+- Filet-O-Fish: 3 minutos 00 segundos. (Vida útil: 30 minutos en UHC).
+NOTA: Nunca mezclar productos de pescado en aceite de pollo.
+
+-------------------------------------------------------------------------
+SECCIÓN 3: ESTACIÓN DE PLANCHA (GRILL)
+-------------------------------------------------------------------------
+
+3.1 CONFIGURACIÓN DE LA PLANCHA (CLAMSHELL GRILL)
+- Temperatura Plancha Superior (Top Platen): 218°C (425°F).
+- Temperatura Plancha Inferior (Bottom Plate): 177°C (350°F).
+- Modo de Espera (Standby): Debe estar cerrado cuando no se usa para mantener calor.
+
+3.2 TIEMPOS DE COCCIÓN (COOK TIMES)
+- Carne 10:1 (Hamburguesa, Big Mac): 38 a 42 segundos (según calibración).
+- Carne 4:1 (Cuarto de Libra - Carne Fresca): 112 segundos (aprox).
+- Tocino: 90 segundos (plancha dedicada).
+- Huevos (Round Eggs): 150 segundos con agua en el anillo y tapa cerrada.
+
+3.3 PROCEDIMIENTO DE LIMPIEZA DE PLANCHA
+- Raspar (Scrape): Después de cada "run" (tanda) de carne, raspar residuos hacia la trampa de grasa.
+- Limpiar (Squeegee): Limpiar la plancha superior con el limpiador de teflón tras cada tanda.
+- Limpieza Profunda: Al cierre, usar el químico "Hi-Temp" a 160°C.
+
+-------------------------------------------------------------------------
+SECCIÓN 4: MESA DE ARMADO (ASSEMBLY LINE)
+-------------------------------------------------------------------------
+
+4.1 ORDEN DE INGREDIENTES (DE CORONA A BASE)
+Los sándwiches se arman sobre la "corona" (parte superior del pan) invertida.
+
+A. BIG MAC
+1. Panes: Corona, Club (medio), Base. Tostar 17-20 segundos.
+2. Salsa: 1 disparo de salsa Big Mac en Club y Base.
+3. Cebolla: Cebolla rehidratada (pequeña) en Club y Base.
+4. Lechuga: Lechuga picada en Club y Base.
+5. Queso: 1 loncha SOLO en la Base.
+6. Pepinillos: 2 rodajas SOLO en el Club.
+7. Carne: 1 carne 10:1 en Club y 1 carne 10:1 en Base.
+
+B. CUARTO DE LIBRA CON QUESO (QPC)
+1. Pan: Cuarto (Semillas de sésamo). Tostar.
+2. Condimentos (en la corona): Ketchup, Mostaza, Cebolla en tiras (fresca), 2 Pepinillos.
+3. Queso 1: Una loncha sobre los condimentos.
+4. Carne: Carne 4:1 caliente recién salida de la plancha.
+5. Queso 2: Una loncha sobre la carne.
+6. Base del pan.
+
+C. HAMBURGUESA CON QUESO (CHEESEBURGER)
+1. Pan: Regular.
+2. Condimentos: Mostaza, Ketchup, Cebolla rehidratada, 1 Pepinillo.
+3. Queso: 1 loncha sobre los condimentos.
+4. Carne: 1 carne 10:1.
+
+-------------------------------------------------------------------------
+SECCIÓN 5: POSTRES Y MÁQUINAS (SHAKE & SUNDAE)
+-------------------------------------------------------------------------
+
+5.1 MÁQUINA DE HELADO (HEAT TREATMENT)
+- Ciclo de Pasteurización: La máquina entra en modo "Heat Treat" automáticamente a las 02:00 AM.
+- Proceso: Calienta la mezcla láctea a 66°C (151°F) y la mantiene ahí durante 30 minutos para eliminar bacterias. Luego enfría rápidamente a 4°C.
+- Falla del Ciclo: Si la máquina no completa el ciclo (por corte de luz o bajo nivel de mezcla), se bloqueará y exigirá limpieza manual completa.
+- Limpieza Manual: Se requiere desarmado completo, lubricación de empaques y cepillado cada 14 días.
+
+5.2 McFLURRY
+- Preparación: Llenar el vaso con helado de vainilla, agregar el topping (Oreo/M&Ms) y mezclar con la cuchara hueca conectada al mixer durante 5 segundos.
+
+-------------------------------------------------------------------------
+SECCIÓN 6: TIEMPOS DE VIDA EN UHC (UNIVERSAL HOLDING CABINET)
+-------------------------------------------------------------------------
+El UHC mantiene los productos calientes antes del armado.
+- Carnes 10:1: 15 a 20 minutos (según ajuste local).
+- Carnes 4:1: No se guardan (Cook to Order - Cocinar al pedir) o máx 10 min.
+- Huevos: 20 minutos.
+- Salchicha: 60 minutos.
+- Tocino: 4 horas.
+
+-------------------------------------------------------------------------
+SECCIÓN 7: PROTOCOLOS DE SERVICIO Y EXPERIENCIA DEL CLIENTE (FRONT COUNTER)
+-------------------------------------------------------------------------
+
+7.1 LOS 6 PASOS DEL SERVICIO (MOSTRADOR Y AUTO-MAC)
+El objetivo es "Rápido y Amable".
+1. Saludar: "Hola, bienvenido a McDonald's". Contacto visual y sonrisa en menos de 5 segundos.
+2. Tomar el pedido: Escuchar atentamente, sugerir venta (Upselling) y confirmar la orden en la pantalla.
+3. Cobrar: Indicar el monto total claramente. Entregar el ticket y el cambio en la mano, no en el mostrador.
+4. Armar el pedido: Verificar que las bebidas y la comida coinciden con el ticket. Colocar servilletas (1 por ítem).
+5. Entregar: "Aquí tiene su pedido número [X]".
+6. Despedir y Agradecer: "Gracias, que disfrute su comida. ¡Vuelva pronto!".
+
+7.2 TIEMPOS OBJETIVO (KVS - KITCHEN VIDEO SYSTEM)
+- Tiempo de Preparación (Cocina): El pedido debe salir de la pantalla KVS en menos de 35 a 50 segundos promedio.
+- Tiempo de Entrega (Mostrador): El cliente debe recibir su comida en menos de 90 segundos desde que pagó.
+- OEPE (Order End to Present End - AutoMac): El tiempo total desde que el coche termina de pedir hasta que recibe la comida debe ser inferior a 120 segundos.
+
+7.3 MANEJO DE QUEJAS (MÉTODO B.L.A.S.T.)
+Cuando un cliente se queja, usar este protocolo:
+- B (Believe): Creer al cliente. No discutir.
+- L (Listen): Escuchar sin interrumpir para entender el problema.
+- A (Apologize): Disculparse sinceramente por el error ("Lo siento mucho").
+- S (Satisfy): Satisfacer al cliente (Reemplazar el producto + ofrecer un postre o cupón de cortesía).
+- T (Thank): Agradecer al cliente por avisarnos para poder mejorar.
+
+-------------------------------------------------------------------------
+SECCIÓN 8: SEGURIDAD ALIMENTARIA AVANZADA (HACCP)
+-------------------------------------------------------------------------
+
+8.1 LA ZONA DE PELIGRO (TEMPERATURE DANGER ZONE)
+Las bacterias se multiplican rápidamente entre 4°C y 60°C.
+- Productos fríos (leche, queso, mezcla de helado): Deben mantenerse entre 1°C y 4°C.
+- Productos calientes (UHC): Deben mantenerse por encima de 60°C.
+- Si un producto refrigerado pasa más de 2 horas en la zona de peligro, debe descartarse.
+
+8.2 SISTEMA DE GUANTES Y CONTAMINACIÓN CRUZADA
+- Guantes AZULES: SOLO para manipular carne cruda, pollo crudo o huevos crudos. Al quitarse estos guantes, lavar las manos o usar gel. NUNCA tocar utensilios cocidos con guantes azules.
+- Guantes TRANSPARENTES (o manos lavadas): Para armar sándwiches y tocar comida lista para comer.
+
+8.3 CALIBRACIÓN DEL PIRÓMETRO (TERMÓMETRO)
+Debe hacerse cada mañana antes de abrir.
+1. Llenar un vaso con hielo triturado y añadir agua fría hasta el borde.
+2. Insertar la sonda del pirómetro sin tocar las paredes del vaso.
+3. Revolver. La temperatura debe leer 0°C (± 1°C). Si lee más, el termómetro está descalibrado y no se puede usar.
+
+-------------------------------------------------------------------------
+SECCIÓN 9: ALMACENAMIENTO Y LOGÍSTICA (BODEGA)
+-------------------------------------------------------------------------
+
+9.1 SISTEMA FIFO (FIRST IN, FIRST OUT - PRIMERO EN ENTRAR, PRIMERO EN SALIR)
+- Regla de Oro: Usar siempre el producto más antiguo primero para garantizar frescura.
+- Rotación: Al recibir camión, colocar los productos nuevos DETRÁS o DEBAJO de los viejos.
+- Etiquetado: Todo producto abierto debe tener una etiqueta de "Día de Uso" (Day Dot) indicando cuándo caduca.
+
+9.2 ALMACENAMIENTO SEGURO
+- Estanterías: Ninguna caja puede estar en contacto directo con el suelo (debe estar a 15 cm de altura mínimo).
+- Orden en Cámara de Congelado:
+  - Estante Superior: Panes congelados, postres.
+  - Estante Medio: Patatas, Nuggets, McChicken.
+  - Estante Inferior: Carne de Res y Cerdo (para evitar que si gotean, contaminen otros productos).
+
+-------------------------------------------------------------------------
+SECCIÓN 10: PROCEDIMIENTOS DE EMERGENCIA Y LIMPIEZA
+-------------------------------------------------------------------------
+
+10.1 SISTEMA DE TRAPOS (CÓDIGO DE COLORES)
+- Trapos BLANCOS/AMARILLOS (con franja): Exclusivos para la zona de cocina (parrillas y freidoras).
+- Trapos ROJOS/ROSAS: Exclusivos para baños y zonas sucias del lobby.
+- Trapos AZULES/VERDES: Mesas del lobby y bandejas limpias.
+- Cubetas de Sanitizante: Cambiar el agua cada 2 horas o cuando se vea sucia. Verificar concentración con tiras reactivas.
+
+10.2 QUÉ HACER SI SE VA LA LUZ
+1. Cerrar el restaurante inmediatamente.
+2. No abrir las cámaras de congelado ni refrigerado para mantener el frío.
+3. Si la luz vuelve en menos de 1 hora, verificar temperaturas de productos.
+4. Si la luz tarda más de 2 horas, contactar al Consultor de Operaciones para evaluar descarte de inventario.
