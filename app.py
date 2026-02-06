@@ -64,15 +64,32 @@ def get_vectorstore():
     return Chroma(persist_directory=DB_PATH, embedding_function=embedding_model)
 
 def get_rag_chain(vector_db):
-    llm = ChatGoogleGenerativeAI(model="gemini-flash-latest", temperature=0, google_api_key=secure_key)
+    llm = ChatGoogleGenerativeAI(
+        model="gemini-flash-latest", 
+        temperature=0, 
+        google_api_key=secure_key
+    )
+    
+    # El prompt DEBE tener la variable {context} para que LangChain sepa qué hacer
     system_prompt = (
         "Eres un Gerente de McDonald's experto. Responde basándote SOLO en este contexto:\n"
         "{context}\n\n"
-        "Si no está aquí, di que no se encuentra en el manual. Sé breve."
+        "Si la información no está aquí, di que no se encuentra en el manual. Sé breve."
     )
-    prompt = ChatPromptTemplate.from_messages([("system", system_prompt), ("human", "{input}")])
+    
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", system_prompt), 
+        ("human", "{input}")
+    ])
+    
+    # Aquí está el cambio: añadimos el prompt correctamente
     qa_chain = create_stuff_documents_chain(llm, prompt)
-    return create_retrieval_chain(vector_db.as_retriever(), qa_chain)
+    
+    # Configuramos el recuperador para que use la variable 'context'
+    return create_retrieval_chain(
+        vector_db.as_retriever(search_kwargs={"k": 3}), 
+        qa_chain
+    )
 
 # --- INTERFAZ ---
 st.title("🍔 Asistente de Operaciones")
