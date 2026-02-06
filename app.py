@@ -6,6 +6,10 @@ __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
+import streamlit as st
+import os
+# ... el resto de tus imports
+
 # Cargar variables
 load_dotenv()
 secure_key = os.getenv("GOOGLE_API_KEY")
