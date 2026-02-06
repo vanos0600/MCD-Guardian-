@@ -56,7 +56,10 @@ def load_system():
     vector_db = Chroma(persist_directory=db_path, embedding_function=embeddings)
     
     # Configurar IA
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0, google_api_key=secure_key)
+    llm = ChatGoogleGenerativeAI(
+        model="gemini-2.5-flash", # <--- USA ESTE NOMBRE EXACTO (Sin -latest)
+        temperature=0, 
+        google_api_key=secure_key)
     
     # Prompt optimizado para Python 3.13
     prompt = ChatPromptTemplate.from_template("""
