@@ -1,4 +1,4 @@
-# 1. PARCHE CRÍTICO PARA BASES DE DATOS EN LA NUBE (LÍNEA 1)
+# 1. HACK PARA SQLITE (DEBE SER LA LÍNEA 1)
 try:
     __import__('pysqlite3')
     import sys
@@ -10,13 +10,15 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-# 2. IMPORTACIONES DE INTELIGENCIA ARTIFICIAL
+# 2. IMPORTACIONES DE LANGCHAIN CORREGIDAS
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_huggingface import HuggingFaceEmbeddings 
 from langchain_chroma import Chroma
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
+
+# ... el resto de tu código igual que antes
 
 # Cargar variables (.env en local o Secrets en Streamlit Cloud)
 load_dotenv()
