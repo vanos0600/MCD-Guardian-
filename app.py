@@ -64,31 +64,38 @@ def get_vectorstore():
     return Chroma(persist_directory=DB_PATH, embedding_function=embedding_model)
 
 def get_rag_chain(vector_db):
+    # Usamos el modelo que ya sabemos que te funciona
     llm = ChatGoogleGenerativeAI(
         model="gemini-flash-latest", 
         temperature=0, 
         google_api_key=secure_key
     )
     
-    # El prompt DEBE tener la variable {context} para que LangChain sepa qué hacer
+    # IMPORTANTE: El prompt DEBE contener la variable {context} 
+    # para que la cadena sepa dónde inyectar los fragmentos del manual.
     system_prompt = (
-        "Eres un Gerente de McDonald's experto. Responde basándote SOLO en este contexto:\n"
-        "{context}\n\n"
-        "Si la información no está aquí, di que no se encuentra en el manual. Sé breve."
+        "Actúa como un Gerente de Entrenadores de McDonald's experto. "
+        "Responde basándote ÚNICAMENTE en el siguiente contexto extraído de los manuales: "
+        "\n\n"
+        "{context}"
+        "\n\n"
+        "Si la información no está en el contexto, di que no se encuentra en los manuales oficiales. "
+        "Sé breve y directo."
     )
     
     prompt = ChatPromptTemplate.from_messages([
-        ("system", system_prompt), 
-        ("human", "{input}")
+        ("system", system_prompt),
+        ("human", "{input}"),
     ])
     
-    # Aquí está el cambio: añadimos el prompt correctamente
-    qa_chain = create_stuff_documents_chain(llm, prompt)
+    # 1. Creamos la cadena que combina los documentos (el "Stuff" chain)
+    question_answer_chain = create_stuff_documents_chain(llm, prompt)
     
-    # Configuramos el recuperador para que use la variable 'context'
+    # 2. La unimos con el recuperador (retriever)
+    # Esto crea el flujo completo: Pregunta -> Búsqueda -> Respuesta
     return create_retrieval_chain(
         vector_db.as_retriever(search_kwargs={"k": 3}), 
-        qa_chain
+        question_answer_chain
     )
 
 # --- INTERFAZ ---
