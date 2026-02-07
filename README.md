@@ -35,7 +35,7 @@ API Resilience: Implemented handling for Error 429 (Rate Limiting), ensuring the
 Clone the repository:
 
 Bash
-git clone https://github.com/your-username/mcd-sop-guardian.git
+git clone https://github.com/vanos0600/MCD-Guardian-
 cd mcd-sop-guardian
 Install dependencies: (Note: Optimized for Python 3.13)
 
@@ -54,6 +54,8 @@ Food Safety: Reduces verification time for critical protocols (oil temps, holdin
 Onboarding: Accelerates the training curve for new hires by providing a "digital mentor."
 
 Digital Transformation: Bridges the gap between traditional physical documentation and modern AI-driven operations.
+
+YOU CAN CHECK THE DEMO HERE: https://mcdguardian.streamlit.app/
 
 👤 Author
 Oskar David Vanegas Juarez 
